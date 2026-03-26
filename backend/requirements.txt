@@ -17,20 +17,36 @@ django==5.2.12
     #   -r requirements.in
     #   django-cors-headers
     #   djangorestframework
+    #   model-bakery
 django-cors-headers==4.9.0
     # via -r requirements.in
 djangorestframework==3.17.1
     # via -r requirements.in
+iniconfig==2.3.0
+    # via pytest
+model-bakery==1.23.3
+    # via -r requirements.in
 packaging==26.0
     # via
     #   build
+    #   pytest
     #   wheel
 pip-tools==7.5.3
     # via -r requirements.in
+pluggy==1.6.0
+    # via pytest
+pygments==2.19.2
+    # via pytest
 pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
+pytest==9.0.2
+    # via pytest-django
+pytest-django==4.12.0
+    # via -r requirements.in
+python-dotenv==1.2.2
+    # via -r requirements.in
 ruff==0.15.7
     # via -r requirements.in
 sqlparse==0.5.5

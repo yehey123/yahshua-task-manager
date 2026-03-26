@@ -13,11 +13,10 @@ help:
 	@echo "  build    - Build backend Docker image"
 
 install:
+	$(PIP_COMPILE) requirements.in --output-file=requirements.txt
 	$(PIP) install -r requirements.txt
 	$(PYTHON) manage.py migrate
 
-compile:
-	$(PIP_COMPILE) requirements.in --output-file=requirements.txt
 
 lint:
 	ruff check .

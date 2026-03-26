@@ -260,7 +260,7 @@ export default function App() {
               <Label htmlFor="title">Title</Label>
               <Input
                 id="title"
-                placeholder="Finish the report..."
+                placeholder="Task name"
                 required
                 value={formData.title}
                 onChange={(e) =>
@@ -272,7 +272,7 @@ export default function App() {
               <Label htmlFor="description">Description (optional)</Label>
               <Input
                 id="description"
-                placeholder="Include the financial summary"
+                placeholder="description of the task"
                 value={formData.description}
                 onChange={(e) =>
                   setFormData({ ...formData, description: e.target.value })

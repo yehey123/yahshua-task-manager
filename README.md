@@ -22,8 +22,8 @@ Build a Task Manager Web App that allows users to:
 ## Getting Started
 
 ### Prerequisites
-- Python 3.10+
-- Node.js 18+
+- Python 3.13
+- Node.js 24
 - `make` (optional but recommended)
 - `docker` and `docker-compose` (for production/containerized setup)
 
@@ -51,7 +51,7 @@ If you have `make` installed, you can set up the entire project with these comma
 
 ### Backend (Django)
 1. Navigate to the backend directory: `cd backend`
-2. Create and activate a virtual environment.
+2. Ensure python version is 3.13
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
@@ -67,11 +67,12 @@ If you have `make` installed, you can set up the entire project with these comma
 
 ### Frontend (React)
 1. Navigate to the frontend directory: `cd frontend`
-2. Install dependencies:
+2. Ensure you are using the right node version (24).
+3. Install dependencies:
    ```bash
    npm install
    ```
-3. Start the development server:
+4. Start the development server:
    ```bash
    npm run dev
    ```

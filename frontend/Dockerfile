@@ -1,0 +1,13 @@
+FROM node:24-slim AS deps
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+
+FROM deps AS builder
+COPY . .
+RUN npm run build
+
+FROM nginx:alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
